@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мини-Магазин</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <h1>WildSweets</h1>
+
+    <div class="products">
+        <div class="product">
+            <img src="img/brownie.jpg" alt="Брауни">
+            <h3>Брауни</h3>
+            <p>Цена: 500 руб.</p>
+            <button onclick="addToCart('Брауни', 500)">Купить</button>
+        </div>
+
+        <div class="product">
+            <img src="img/chocolate_cookies.jpg" alt="Печенье">
+            <h3>Печенье</h3>
+            <p>Цена: 150 руб.</p>
+            <button onclick="addToCart('Печенье', 150)">Купить</button>
+        </div>
+
+        <div class="product">
+            <img src="img/cheesecake.jpg" alt="Чизкейк">
+            <h3>Чизкейк</h3>
+            <p>Цена: 900 руб.</p>
+            <button onclick="addToCart('Чизкейк', 900)">Купить</button>
+        </div>
+
+        <div class="product">
+            <img src="img/syanabon.jpg" alt="Синабон">
+            <h3>Синабон</h3>
+            <p>Цена: 700 руб.</p>
+            <button onclick="addToCart('Синабон', 700)">Купить</button>
+        </div>
+
+        <div class="product">
+            <img src="img/cherry_pie.jpg" alt="Вишневый пирог">
+            <h3>Вишневый пирог</h3>
+            <p>Цена: 1200 руб.</p>
+            <button onclick="addToCart('Вишневый пирог', 1200)">Купить</button>
+        </div>
+        
+    </div>
+
+    <div class="cart">
+        <h2>Корзина</h2>
+        <ul id="cart-items"></ul>
+        <p>Итого: <span id="total">0</span> руб.</p>
+        <button id="clear-cart" onclick="clearCart()">Очистить корзину</button>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
